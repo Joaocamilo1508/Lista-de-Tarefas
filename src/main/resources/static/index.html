@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>📋 Minha To-Do List</h1>
+
+    <form id="tarefa-form">
+        <input type="text" id="titulo" placeholder="Título" required />
+        <input type="text" id="descricao" placeholder="Descrição" />
+        <input type="date" id="dataVencimento" />
+        <select id="prioridade">
+            <option value="BAIXA">Baixa</option>
+            <option value="MEDIA">Média</option>
+            <option value="ALTA">Alta</option>
+        </select>
+        <select id="status">
+            <option value="PENDENTE">Pendente</option>
+            <option value="EM_ANDAMENTO">Em andamento</option>
+            <option value="CONCLUIDA">Concluída</option>
+        </select>
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <ul id="lista-tarefas"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
